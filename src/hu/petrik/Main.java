@@ -38,7 +38,7 @@ public class Main {
                     fuvarok.stream().anyMatch(fuvarok -> fuvarok.getT_azosito() == 1452));
 
 
-            System.out.println("Leghosszabb fuvar: ");
+            System.out.println("Legrövidebb fuvarok: ");
             fuvarok.stream()
                     .filter(fuvar -> fuvar.getUtazas()>0)
                     .sorted((a,b)->a.getUtazas()-b.getUtazas())
